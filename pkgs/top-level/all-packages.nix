@@ -15725,6 +15725,8 @@ in
 
   system-sendmail = lowPrio (callPackage ../servers/mail/system-sendmail { });
 
+  prime_server = callPackage ../servers/http/prime_server { };
+
   # PulseAudio daemons
 
   pulseaudio = callPackage ../servers/pulseaudio {
@@ -16173,6 +16175,8 @@ in
     unifiLTS
     unifiStable;
   unifi = unifiStable;
+
+  valhalla = callPackage ../servers/valhalla { };
 
   victoriametrics = callPackage ../servers/nosql/victoriametrics { };
 
